@@ -95,11 +95,15 @@ p {
 
 .body {
     padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .info-group {
     display: flex;
     flex-direction: column;
+    gap: 35px;
 }
 
 .intro-text {
@@ -112,8 +116,8 @@ p {
 .search-container {
     width: 100%;
     max-width: 1440px;
-    margin: 40px auto;
     display: flex;
+    gap: 24px;
 }
 
 .search-input {
@@ -160,17 +164,18 @@ p {
     font-size: 16px;
     cursor: pointer;
     border: 2px solid #D9D9D9;
-}
-
-.filter-button svg {
-    margin-right: 8px;
+    gap: 10px;
 }
 
 .filter-button:hover {
     background-color: var(--filter-bg-color);
 }
 
-
+.info-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 a {
     color: inherit;

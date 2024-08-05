@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /****** Header ***********/
@@ -41,6 +44,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .logo {
@@ -91,13 +98,6 @@ h1 {
 
 p {
     font-size: 16px;
-}
-
-.body {
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
 }
 
 .info-group {
@@ -321,11 +321,35 @@ a {
     margin-bottom: 24px;
 }
 
+/****** Activités ***********/
 
+.activités {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.activity-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.activity-card {
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex: 1 1 calc(25% - 30px); /* Four cards in a row with a 30px gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-
+.activity-card img {
+    height: 380px;
+    width: 297.5px;
+    object-fit: cover;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/

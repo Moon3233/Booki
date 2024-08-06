@@ -271,8 +271,9 @@ a {
     margin-bottom: 8px;
 }
 
-.hebergements h1 {
+.hebergements h2 {
     font-size: 18px;
+    margin: 0;
 }
 
 /****** Populaires ***********/

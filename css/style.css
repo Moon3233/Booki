@@ -336,7 +336,7 @@ a {
     gap: 30px;
 }
 .activity-card {
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     flex: 1 1 calc(25% - 30px); /* Four cards in a row with a 30px gap */
@@ -349,7 +349,21 @@ a {
     height: 380px;
     width: 297.5px;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
+
+.activity-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 19px;
+    align-self: stretch;
+}
+
+.activity-card-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/

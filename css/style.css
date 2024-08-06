@@ -529,11 +529,13 @@ footer {
     }
 
     .hebergements-and-populaires {
+        flex-direction: column-reverse;
         gap: 35px;
     }
 
     .hebergements {
         gap: 15px;
+        background-color: transparent !important;
     }
 
     .hebergements-cards {
